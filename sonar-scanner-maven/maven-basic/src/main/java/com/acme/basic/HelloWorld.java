@@ -1,13 +1,17 @@
 package com.acme.basic;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class HelloWorld {
 
+  private static final Logger LOG = LogManager.getLogger();
   void sayHello() {
-    System.out.println("Hello World!");
+    LOG.atInfo().log("Hello World!");
   }
 
   void notCovered() {
-    System.out.println("This method is not covered by unit tests");
+    LOG.atInfo().log("This method is not covered by unit tests");
   }
 
 }
