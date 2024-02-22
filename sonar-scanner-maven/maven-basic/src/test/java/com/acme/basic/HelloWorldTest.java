@@ -12,4 +12,12 @@ public class HelloWorldTest {
     new HelloWorld().sayHello();
     Assert.assertTrue(true);
   }
+  @Test
+  public void notCoveredTest() {
+
+
+    new HelloWorld().notCovered();
+    Assert.assertTrue(true);
+  }
+
 }
